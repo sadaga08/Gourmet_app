@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=UnifrakturCook:wght@700&display=swap');
+.container{
+border: 1px solid rgb(56, 56, 56);
+}
+header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1050; 
+}
+.navbar{
+    background-color: #fff;
+    border-bottom: 1px solid #0a0a0a;
+    box-shadow: 2px 6px 12px  rgb(56, 56, 56);
+}
+body{
+    padding-top: 170px;
+}
+.nav-link {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: rgb(231, 165, 42);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
